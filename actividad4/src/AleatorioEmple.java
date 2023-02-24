@@ -5,11 +5,13 @@ import java.io.RandomAccessFile;
 public class AleatorioEmple {
 
 	public static void main(String[] args) throws IOException {
+		//Primera linea de visualizacion
 		crear();
 		leer();
 	}
 
 	public static void leer() throws IOException {
+		//Segunda linea de visualizacion
 		File fichero = new File("AleatorioEmple.dat");
 		RandomAccessFile file = new RandomAccessFile(fichero, "r");
 		char cad[] = new char[10], aux;
@@ -43,7 +45,9 @@ public class AleatorioEmple {
 			System.out.println(" ---------FICHERO VAC�O --------------------");
 	}// fin verporconsola
 
+	//Para el tercer commit
 	public static void crear() throws IOException {
+		//Tercera linea de visualizacion
 		File fichero = new File("AleatorioEmple.dat");
 		RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 		String apellido[] = { "FERNANDEZ", "GIL", "LOPEZ", "RAMOS", "SEVILLA", "CASILLA", "REY" };
@@ -66,6 +70,11 @@ public class AleatorioEmple {
 		System.out.println("1 linea");
 		System.out.println("2 linea");
 		System.out.println("3 linea");
+		
+		
+		int saludo =0;
+		
+	if (saludo ==0) System.out.println("Hola mundo");
 
 	}// fin crear
 
