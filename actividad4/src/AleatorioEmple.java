@@ -54,7 +54,7 @@ public class AleatorioEmple {
 		int dep[] = { 10, 20, 10, 10, 30, 30, 20 }; 
 		Double salario[] = { 1000.45, 2400.60, 3000.0, 1500.56, 2200.0, 1435.87, 2000.0 };
 
-		StringBuffer buffer = null;
+		StringBuffer buffer = null;	
 		int n = apellido.length;
 
 		for (int i = 0; i < n; i++) {
@@ -65,7 +65,7 @@ public class AleatorioEmple {
 			file.writeInt(dep[i]);
 			file.writeDouble(salario[i]);
 		}
-		file.close();
+		file.close();	
 		
 		System.out.println("1 linea");
 		System.out.println("2 linea");
