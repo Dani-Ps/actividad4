@@ -5,11 +5,13 @@ import java.io.RandomAccessFile;
 public class AleatorioEmple {
 
 	public static void main(String[] args) throws IOException {
+		//Primera linea de visualizacion
 		crear();
 		leer();
 	}
 
 	public static void leer() throws IOException {
+		//Segunda linea de visualizacion
 		File fichero = new File("AleatorioEmple.dat");
 		RandomAccessFile file = new RandomAccessFile(fichero, "r");
 		char cad[] = new char[10], aux;
@@ -43,14 +45,16 @@ public class AleatorioEmple {
 			System.out.println(" ---------FICHERO VAC�O --------------------");
 	}// fin verporconsola
 
+	//Para el tercer commit
 	public static void crear() throws IOException {
+		//Tercera linea de visualizacion
 		File fichero = new File("AleatorioEmple.dat");
 		RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 		String apellido[] = { "FERNANDEZ", "GIL", "LOPEZ", "RAMOS", "SEVILLA", "CASILLA", "REY" };
 		int dep[] = { 10, 20, 10, 10, 30, 30, 20 }; 
 		Double salario[] = { 1000.45, 2400.60, 3000.0, 1500.56, 2200.0, 1435.87, 2000.0 };
 
-		StringBuffer buffer = null;
+		StringBuffer buffer = null;	
 		int n = apellido.length;
 
 		for (int i = 0; i < n; i++) {
@@ -61,11 +65,16 @@ public class AleatorioEmple {
 			file.writeInt(dep[i]);
 			file.writeDouble(salario[i]);
 		}
-		file.close();
+		file.close();	
 		
 		System.out.println("1 linea");
 		System.out.println("2 linea");
 		System.out.println("3 linea");
+		
+		
+		int saludo =0;
+		
+	if (saludo ==0) System.out.println("Hola mundo");
 
 	}// fin crear
 
